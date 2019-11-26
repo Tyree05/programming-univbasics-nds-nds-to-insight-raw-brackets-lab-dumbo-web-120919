@@ -16,7 +16,7 @@ def directors_totals(nds)
     directors_total << total
     row_index += 1
   end
-
+pp directors_total
 
 
   # directors_database[row_index][:movies][column_index][:worldwide_gross]
