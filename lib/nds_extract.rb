@@ -36,7 +36,7 @@ def directors_totals(nds)
     "Martin Scorsese" => directors_total[7],
     "Francis Ford Coppola" => directors_total[8]
   }
-
+  return result
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
@@ -47,5 +47,4 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   nil
-    return result
 end
