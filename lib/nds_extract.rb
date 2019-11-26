@@ -4,6 +4,7 @@ require 'directors_database'
 def directors_totals(nds)
   require 'pp'
   # pp directors_database
+  pp directors_totals
   row_index = 0
   directors_totals = []
   while row_index < directors_database[row_index].length do
@@ -36,7 +37,6 @@ def directors_totals(nds)
     "Martin Scorsese" => directors_totals[7],
     "Francis Ford Coppola" => directors_totals[8]
   }
-  return directors_totals
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
