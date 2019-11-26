@@ -6,7 +6,7 @@ def directors_totals(nds)
   pp directors_database
   row_index = 0
   directors_total = []
-  while row_index < nds[row_index].length do
+  while row_index < nds.length do
     total = 0
     column_index = 0
     while column_index < nds[row_index][:movies].length do
