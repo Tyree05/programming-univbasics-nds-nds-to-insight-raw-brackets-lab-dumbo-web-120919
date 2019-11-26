@@ -5,7 +5,7 @@ def directors_totals(nds)
   require 'pp'
   # pp directors_database
   row_index = 0
-  directors_totals = []
+  directors_total = []
   while row_index < nds[row_index].length do
     total = 0
     column_index = 0
@@ -13,7 +13,7 @@ def directors_totals(nds)
       total = nds[row_index][:movies][column_index][:worldwide_gross] + total
       column_index += 1
     end
-    directors_totals << total
+    directors_total << total
     row_index += 1
   end
 
@@ -26,15 +26,15 @@ def directors_totals(nds)
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   result = {
-    "Stephen Spielberg" => directors_totals[0],
-    "Russo Brothers" => directors_totals[1],
-    "James Cameron" => directors_totals[2],
-    "Spike Lee" => directors_totals[3],
-    "Wachowski Siblings" => directors_totals[4],
-    "Robert Zemeckis" => directors_totals[5],
-    "Quentin Tarantino" => directors_totals[6],
-    "Martin Scorsese" => directors_totals[7],
-    "Francis Ford Coppola" => directors_totals[8]
+    "Stephen Spielberg" => directors_total[0],
+    "Russo Brothers" => directors_total[1],
+    "James Cameron" => directors_total[2],
+    "Spike Lee" => directors_total[3],
+    "Wachowski Siblings" => directors_total[4],
+    "Robert Zemeckis" => directors_total[5],
+    "Quentin Tarantino" => directors_total[6],
+    "Martin Scorsese" => directors_total[7],
+    "Francis Ford Coppola" => directors_total[8]
   }
   return result
   #
