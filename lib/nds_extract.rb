@@ -3,7 +3,7 @@ require 'directors_database'
 
 def directors_totals(nds)
   require 'pp'
-  # pp directors_database
+  pp directors_database
   row_index = 0
   directors_total = []
   while row_index < nds[row_index].length do
@@ -16,7 +16,7 @@ def directors_totals(nds)
     directors_total << total
     row_index += 1
   end
-pp directors_total
+# pp directors_total
 
 
   # directors_database[row_index][:movies][column_index][:worldwide_gross]
